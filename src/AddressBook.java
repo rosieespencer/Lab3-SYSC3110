@@ -19,4 +19,11 @@ public class AddressBook {
         }
         return null;
     }
+
+    public static void main(String[] args) {
+        BuddyInfo buddy = new BuddyInfo("Peter", "123 Avenue", "123-456-7891");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(0);
+    }
 }
